@@ -1,0 +1,136 @@
+/*Background.js*/
+.background{
+  display: flex;
+  flex-direction: column;
+  background-color:  #d3d4d6;
+  height: 100vh;
+  border-radius: 0% 30% 0% 50%;
+
+}
+
+.background-header{
+  display: flex;
+  gap: 1375px;
+}
+
+.background-logo{
+  height: 100px;
+  width: 100px;
+}
+
+.background2{
+  display: flex;
+  background-color:   #e9dee8;
+  height: 100vh;
+  border-radius: 50% 40% 30% 0% ;
+}
+
+label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+/*Recommendation.js*/
+.recommendation{
+  display: flex;
+  flex-direction: column;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.recommendationHeader{
+
+}
+
+.recommendationTitle{
+  color:rgb(6, 6, 6);
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-style:oblique;
+}
+
+.recommendationInput{
+  display: flex;
+  flex:1;
+  gap:40px;
+  min-width: 200px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.recommendationInput button{
+  font-size: 10px;
+  color: #080808;
+  font-weight: bold;
+  background-color:rgb(179, 122, 179);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: left;
+  width: 140px;
+  justify-content: center;
+  height: 45px;
+  margin-top: 40px;
+}
+
+.recommendationInput button:hover {
+  background-color: #45a049;
+}
+
+.recommendationInput button:focus {
+  outline:#171515;
+}
+
+
+
+
+/*StageInput.js*/
+.stageInput{
+  display: flex;
+}
+
+.stageInputField{
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+/*TimeInput.js*/
+.timeInput{
+  display: flex;
+  margin-left: 20px;
+}
+
+.timeInputField{
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+/*DietDisplay.js*/
+.dietDisplay{
+  margin-left: 380px;
+  border : 1px solid black;
+  margin-top: 80px;
+  background-color: #f490ec;
+  height: 300px;
+  width: 550px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
