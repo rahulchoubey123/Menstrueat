@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import AppWithGlobalProvider from './App';
-import reportWebVitals from './reportWebVitals';
+"use strict";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <AppWithGlobalProvider />
-  </React.StrictMode>
-);
+const express = require("express");
+const cors= require("cors");
+const bodyParser= require("body-parser");
+const port = 4000;
+const app = express();
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const dietFetch = require("./dietFetch");
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(dietFetch);
+
+app.listen(port,()=>{
+    console.log("Server is listening on http://localhost:"+port);
+});
